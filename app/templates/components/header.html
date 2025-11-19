@@ -5,7 +5,7 @@
 {% if current_user.is_authenticated %}
 {% set navigation = [
   {"href": url_for("main.show_accounts_or_dashboard"), "text": "Current service", "active": request.path.startswith('/accounts')},
-  {"href": url_for('main.get_started'), "text": "Using Notify", "active": request.path.startswith('/using-notify')},
+  {"href": url_for('main.get_started'), "text": "Using Flexion Messaging", "active": request.path.startswith('/using-notify')},
   {"href": url_for('main.support'), "text": "Contact us", "active": header_navigation.is_selected('support')}
 ] %}
 
@@ -32,7 +32,7 @@
 
 {% else %}
 {% set navigation = [
-  {"href": url_for('main.about_notify'), "text": "About Notify", "active": is_about_page},
+  {"href": url_for('main.about_notify'), "text": "About Flexion Messaging", "active": is_about_page},
   {"href": url_for('main.contact'), "text": "Contact us", "active": is_contact_page}
 ] %}
 {% endif %}
@@ -50,8 +50,8 @@
         <div class="usa-logo display-flex flex-align-center flex-justify" id="-logo">
           <div class="logo-img display-flex">
             <a href="/">
-              <span class="usa-sr-only">Notify.gov logo</span>
-              <img src="{{ (asset_path | default('/static')) + 'images/notify-logo.svg' }}" alt="Notify.gov logo"
+              <span class="usa-sr-only">Flexion Messaging logo</span>
+              <img src="{{ (asset_path | default('/static')) + 'images/notify-logo.svg' }}" alt="Flexion Messaging logo"
                 class="usa-flag-logo margin-right-1">
             </a>
           </div>
