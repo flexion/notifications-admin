@@ -34,7 +34,7 @@ agency money.</td>
 </tbody>
 </table>
 
-### OUR FIRST BET: Notify.gov
+### OUR FIRST BET: Flexion Messaging
 
 <table>
 <colgroup>
@@ -49,7 +49,7 @@ style="width:4.63788in;height:3.75964in" /></h3></td>
 <p>No technical knowledge needed to create direct, actionable
 messages.</p>
 <h3 id="send-bulk-messages">Send bulk messages </h3>
-<p>Upload a .csv file with necessary information and Notify.gov sends
+<p>Upload a .csv file with necessary information and Flexion Messaging sends
 messages customized to each recipient</p>
 <h3 id="see-how-messages-perform">See how messages perform</h3>
 <p>Track how many messages you’ve sent and monitor successful delivery
@@ -58,7 +58,7 @@ rates</p></td>
 </tbody>
 </table>
 
-**Notify.gov** will be a federally-run shared service allowing staff to
+**Flexion Messaging** will be a federally-run shared service allowing staff to
 send thousands of customized-to-the-user text messages per year at
 little-to-no-cost. The easy interface requires no technical expertise to
 use and the setup process takes only ten minutes.
@@ -83,22 +83,22 @@ additional features based on partner needs.
 
 To get involved, email us at [tts-benefits-studio@gsa.gov](mailto:tts-benefits-studio@gsa.gov) with the following in the subject line!
 
-1.  **Request a Studio introduction and/or a Notify.gov demo:** Request an
+1.  **Request a Studio introduction and/or a Flexion Messaging demo:** Request an
     introductory call to  
     talk about our product, near term goals, and ways to get involved.
 
-2.  **Provide feedback about Notify.gov:** If you're a potential product
+2.  **Provide feedback about Flexion Messaging:** If you're a potential product
     user, set up an individual feedback session to help us fortify our
     tool and talk through potential set-up considerations from your
     vantage point.
 
-3.  **Sign up to pilot Notify.gov:** Already think this might be the tool
+3.  **Sign up to pilot Flexion Messaging:** Already think this might be the tool
     for you? We’re looking for benefit-administering partners to
-    co-design a pilot program to test Notify.gov for specific use cases.
+    co-design a pilot program to test Flexion Messaging for specific use cases.
     Early adopters will have wrap-around set-up support from the Studio
     and an opportunity to shape the future of this product.
     
-## Notify.gov Demo
+## Flexion Messaging Demo
 
 https://github.com/user-attachments/assets/e0bc4c61-6154-46b5-8b40-380ecd868b58
 
