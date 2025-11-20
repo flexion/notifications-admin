@@ -159,8 +159,8 @@ def send_messages(service_id, template_id):
         except XLDateError:
             flash(
                 (
-                    "{} contains numbers or dates that Notify cannot understand. "
-                    "Try formatting all columns as ‘text’ or export your file as CSV."
+                    "{} contains numbers or dates that Flexion Messaging cannot understand. "
+                    "Try formatting all columns as 'text' or export your file as CSV."
                 ).format(form.file.data.filename)
             )
     elif form.errors:
@@ -293,9 +293,9 @@ def remove_notify_from_sender_options(sender_details):
 
 
 def verify_sender_options(sender):
-    if sender.get("sms_sender") in ["Notify.gov", "US Notify"] and sender["is_default"]:
+    if sender.get("sms_sender") in ["Flexion Messaging", "Flexion"] and sender["is_default"]:
         return True
-    if sender.get("sms_sender") not in ["Notify.gov", "US Notify"]:
+    if sender.get("sms_sender") not in ["Flexion Messaging", "Flexion"]:
         return True
 
     return False
@@ -410,7 +410,7 @@ def send_one_off_step(service_id, template_id, step_index):
     elif db_template["template_type"] == "sms":
         sms_sender = (
             get_sms_sender_from_session()
-        )  # TODO: verify default sender is Notify.gov
+        )  # TODO: verify default sender is Flexion Messaging
 
     template_values = get_recipient_and_placeholders_from_session(
         db_template["template_type"]
