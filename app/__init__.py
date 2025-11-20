@@ -427,7 +427,7 @@ def create_beta_url(url):
     try:
         url_created = urlparse(url)
         url_list = list(url_created)
-        url_list[1] = "beta.notify.gov"
+        url_list[1] = "solution.flexion.us"
         url_for_redirect = urlunparse(url_list)
         return url_for_redirect
     except ValueError:
@@ -445,7 +445,7 @@ def create_beta_url(url):
 def redirect_notify_to_beta():
     if (
         current_app.config["NOTIFY_ENVIRONMENT"] == "production"
-        and "beta.notify.gov" not in request.url
+        and "solution.flexion.us" not in request.url
     ):
         # TODO add debug here to trace what is going on with the URL for the 'RequestContext' error
         url_to_beta = create_beta_url(request.url)
