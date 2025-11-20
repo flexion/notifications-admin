@@ -20,7 +20,7 @@
   <p>Flexion Messaging is comprised of two applications both running on <a href="https://www.cloud.gov">cloud.gov</a>:</p>
   <ul class="list">
     <li>Admin, a Flask website running on the python_buildpack which hosts agency user-facing UI</li>
-    <li>API, a Flask application running on the python_buildpack hosting the Notify API</li>
+    <li>API, a Flask application running on the python_buildpack hosting the Flexion Messaging API</li>
   </ul>
 
   <p>Flexion Messaging utilizes several cloud.gov-provided services through Amazon Web Services (AWS):</p>
@@ -49,7 +49,7 @@
   <p>Flexion Messaging is not a system of record and as a result does not have a SORN. Agencies are responsible for managing their
   data outside of Flexion Messaging.</p>
   <ul class="list">
-    <li>Notify stores data within the cloud.gov-managed PostgreSQL database and <a href="https://cloud.gov/docs/services/s3/#encryption">S3 buckets</a>. The entire database is <a href="https://cloud.gov/docs/services/relational-database/#encryption">encrypted at
+    <li>Flexion Messaging stores data within the cloud.gov-managed PostgreSQL database and <a href="https://cloud.gov/docs/services/s3/#encryption">S3 buckets</a>. The entire database is <a href="https://cloud.gov/docs/services/relational-database/#encryption">encrypted at
     the disk level</a>.</li>
     <li>Additionally, data is encrypted at the field level when it is stored in the database, using OpenSSL 3.0.8 via the Python
     cryptography library. The implementation is available <a href="https://github.com/GSA/notifications-utils/blob/main/notifications_utils/clients/encryption/encryption_client.py">on GitHub</a>.</li>
@@ -64,20 +64,20 @@
 
   <h3 class="font-body-lg">Protect sensitive information</h3>
   <p>Some messages include sensitive information like security codes or password reset links.</p>
-  <p>If you’re sending a message with sensitive information, you can choose to hide those details on the Notify dashboard once the message has been sent. This means that only the message recipient will be able to see that information.</p>
+  <p>If you’re sending a message with sensitive information, you can choose to hide those details on the Flexion Messaging dashboard once the message has been sent. This means that only the message recipient will be able to see that information.</p>
   <img src="{{ asset_url('images/product/security-review-message.png') }}"
   alt="Screenshot of a test message in review with the link to 'Hide all personalized and conditional content after sending for increased privacy protection' emphasized.">
 
   <h3 class="font-body-lg">Two-factor authentication</h3>
-  <p>To sign in to Notify, you’ll need to enter:</p>
+  <p>To sign in to Flexion Messaging, you’ll need to enter:</p>
   <ul class="list list-bullet">
     <li>your email address and password</li>
-    <li>a text message code that Notify sends to your phone</li>
+    <li>a text message code that Flexion Messaging sends to your phone</li>
   </ul>
   <p>If signing in with a text message is a problem for your team, <a class="usa-link" href="{{ url_for('main.support') }}">contact us</a> to find out about using an email link instead.</p>
 
   <h3>User permissions and signing in</h3>
-  <p>You can set different user permissions in Notify. This lets you control who in your team has access to certain parts of
+  <p>You can set different user permissions in Flexion Messaging. This lets you control who in your team has access to certain parts of
   the service.</p>
 
   <h3>Multi-factor authentication (MFA)</h3>
