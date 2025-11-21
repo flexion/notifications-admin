@@ -1293,7 +1293,7 @@ class ChooseTimeForm(StripWhitespaceForm):
         )
 
     scheduled_for = UsaRadiosField(
-        "When should Notify send these messages?",
+        "When should Flexion Messaging send these messages?",
         default="",
     )
 
