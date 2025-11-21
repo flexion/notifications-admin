@@ -3412,7 +3412,7 @@ def create_multiple_sms_senders(
         {
             "id": "9897",
             "service_id": service_id,
-            "sms_sender": "Notify.gov",
+            "sms_sender": "Flexion Messaging",
             "is_default": isdefault4,
             "created_at": datetime.utcnow(),
             "inbound_number_id": None,

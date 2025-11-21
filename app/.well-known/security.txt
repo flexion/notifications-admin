@@ -1,2 +1,2 @@
-Contact: mailto:notify-support@gsa.gov
+Contact: https://solution.flexion.us/contact/
 Expires: 2035-10-15T23:59:59Z

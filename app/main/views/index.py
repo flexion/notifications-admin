@@ -7,10 +7,7 @@ from app import status_api_client
 from app.formatters import apply_html_class, convert_markdown_template
 from app.main import main
 from app.main.views.pricing import CURRENT_SMS_RATE
-from app.main.views.sub_navigation_dictionaries import (
-    about_notify_nav,
-    using_notify_nav,
-)
+from app.main.views.sub_navigation_dictionaries import using_notify_nav
 from app.utils.user import user_is_logged_in
 
 logger = logging.getLogger(__name__)
@@ -208,36 +205,36 @@ def how_to():
     )
 
 
-@main.route("/contact")
-def contact():
-    return render_template(
-        "views/contact.html",
-        navigation_links=about_notify_nav(),
-    )
+# @main.route("/contact")
+# def contact():
+#     return render_template(
+#         "views/contact.html",
+#         navigation_links=about_notify_nav(),
+#     )
 
 
-@main.route("/about")
-def about_notify():
-    return render_template(
-        "views/about/about.html",
-        navigation_links=about_notify_nav(),
-    )
+# @main.route("/about")
+# def about_notify():
+#     return render_template(
+#         "views/about/about.html",
+#         navigation_links=about_notify_nav(),
+#     )
 
 
-@main.route("/about/security")
-def about_security():
-    return render_template(
-        "views/about/security.html",
-        navigation_links=about_notify_nav(),
-    )
+# @main.route("/about/security")
+# def about_security():
+#     return render_template(
+#         "views/about/security.html",
+#         navigation_links=about_notify_nav(),
+#     )
 
 
-@main.route("/about/why-text-messaging")
-def why_text_messaging():
-    return render_template(
-        "views/about/why-text-messaging.html",
-        navigation_links=about_notify_nav(),
-    )
+# @main.route("/about/why-text-messaging")
+# def why_text_messaging():
+#     return render_template(
+#         "views/about/why-text-messaging.html",
+#         navigation_links=about_notify_nav(),
+#     )
 
 
 @main.route("/notify-service-ending")

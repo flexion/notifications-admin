@@ -107,7 +107,7 @@
   </div>
 
   <h2 class="font-body-lg">
-    Organizations using Notify
+    Organizations using Flexion Messaging
   </h2>
   <div class="grid-row margin-bottom-3">
     <div class="grid-col-6">
@@ -119,14 +119,14 @@
       <span class="usa-sr-only">and</span>
       <div class="product-page-big-number">{{ count_of_live_services_and_organizations.services|format_thousands }}</div>
       services
-      <span class="usa-sr-only">using Notify.</span>
+      <span class="usa-sr-only">using Flexion Messaging.</span>
     </div>
   </div>
   <div class="table-overflow-x-auto">
     <div class="dashboard-table">
       {% call(item, row_number) list_table(
         organizations_using_notify,
-        caption='Organizations using Notify',
+        caption='Organizations using Flexion Messaging',
         caption_visible=False,
         field_headings=[
           'Organization', 'Number of live services'

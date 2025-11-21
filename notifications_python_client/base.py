@@ -16,7 +16,7 @@ API_PUBLIC_URL = getenv("API_PUBLIC_URL", "localhost")
 
 class BaseAPIClient:
     """
-    Base class for Notify.gov API client.
+    Base class for Flexion Messaging API client.
 
     This class is not thread-safe.
     """
@@ -25,7 +25,7 @@ class BaseAPIClient:
         """
         Initialise the client
         Error if either of base_url or secret missing
-        :param base_url - base URL of Notify.gov API:
+        :param base_url - base URL of Flexion Messaging API:
         :param secret - application secret - used to sign the request:
         :param timeout - request timeout on the client
         :return:
